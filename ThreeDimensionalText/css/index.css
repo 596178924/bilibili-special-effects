@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: rgba(233,233,238,1);
+}
+.text {
+	font-size: 10em;
+	font-weight: 900;
+	color: #fff;
+	transform: rotate(-25deg) skew(25deg);
+	position: relative;
+}
+.text::before {
+	content: 'HXB NB';
+	position: absolute;
+	color: rgba(0,0,0,0.6);
+	filter: blur(20px);
+	z-index: -1;
+	left: -30px;
+	top: 30px;
+}
